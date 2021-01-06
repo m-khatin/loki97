@@ -6,12 +6,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-public class Window extends JFrame {
+public class Window extends JFrame
+{
     private JPanel mainPanel;
     private JButton FileButton;
     private JProgressBar progressBar1;
 
-    public Window() {
+    public Window()
+    {
 
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         int width = 560;
@@ -24,9 +26,11 @@ public class Window extends JFrame {
         setVisible(true);
 
 
-        FileButton.addActionListener(new ActionListener() {
+        FileButton.addActionListener(new ActionListener()
+        {
             @Override
-            public void actionPerformed(ActionEvent actionEvent) {
+            public void actionPerformed(ActionEvent actionEvent)
+            {
                 JFileChooser jFileChooser = new JFileChooser();
                 jFileChooser.showOpenDialog(null);
             }
